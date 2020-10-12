@@ -1,0 +1,51 @@
+.CountryPicker {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input {
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #c3c3c3;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 15px 5px;
+
+    &-label {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+    z-index: 1000;
+
+    &.hidden {
+      height: 0;
+    }
+  }
+
+  &__list-item {
+    padding: 10px 15px;
+    border: 1px solid #e3e3e3;
+    cursor: pointer;
+    background-color: #fff;
+
+    transition: background-color 150ms ease;
+
+    &:hover {
+      background-color: #e3e3e3;
+    }
+  }
+}

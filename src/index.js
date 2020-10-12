@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import CvTracker from './components/CvTracker/CvTracker';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CvTracker />
   </React.StrictMode>,
   document.getElementById('root')
 );

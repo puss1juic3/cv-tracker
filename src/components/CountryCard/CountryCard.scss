@@ -1,0 +1,61 @@
+.CountryCard {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid #e3e3e3;
+
+  box-shadow: -1px 5px 4px 0 rgba(0,0,0,.1);
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+  }
+
+  &__total {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  &__new {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &__remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+
+    transition: opacity 200ms ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .green {
+    color: #00C976;
+  }
+
+  .red {
+    color: #E94F37;
+  }
+}
