@@ -16,7 +16,7 @@ import {
 function CvTracker() {
   const [statistics, setStatistics] = useState([]);
   const [trackedCountries, setTrackedCountries] = useState(
-    JSON.parse(localStorage.getItem('trackedCountries'))
+    JSON.parse(localStorage.getItem('trackedCountries')) || []
   );
 
   useEffect(() => {
